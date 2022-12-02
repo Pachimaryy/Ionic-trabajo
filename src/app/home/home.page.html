@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+    
+
+    <div class="user_div">
+      <div class="first_div">
+        <ion-label class="welcome">Bienvenid@ a la App</ion-label>
+      </div>
+    </div>
+
+    <div class="content_div">
+      <ion-label class="hello_lbl">A donde deseas ir:</ion-label>
+      
+
+      <ion-button routerLink="/clima" class="ion-margin-top">
+        <ion-icon name="cloudy" slot="start"></ion-icon>
+        Ver el clima
+      </ion-button>
+      <ion-button routerLink="/usuarios" class="ion-margin-top">
+        <ion-icon name="people" slot="start"></ion-icon>
+        Ver usuarios
+      </ion-button>
+      <br>
+      <ion-button routerLink="/conversor" class="ion-margin-top">
+        <ion-icon name="cash" slot="start"></ion-icon>
+         Moneda
+      </ion-button>
+      <ion-button routerLink="/noticias" class="ion-margin-top">
+        <ion-icon name="newspaper" slot="start"></ion-icon>
+         Noticias
+      </ion-button>
+      <br>
+      <br>
+      <ion-button routerLink="/login" class="ion-margin-top">
+        <ion-icon name="exit" slot="start"></ion-icon>
+         Salir
+      </ion-button>
+
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="6" (click)="goToSubject()">
+            <div class="col_div"></div>
+
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+    </div>
+
+  </div>
+
+</ion-content>

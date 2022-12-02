@@ -1,0 +1,40 @@
+<ion-app>
+  <ion-menu menuId="main-menu" content-id="main">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="home" slot="start" ></ion-icon>
+          <ion-label routerLink="/home">Home</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="Cloud" slot="start" ></ion-icon>
+          <ion-label routerLink="/clima">Clima</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="Cash" slot="start"></ion-icon>
+          <ion-label routerLink="/conversor">Conversor</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="People" slot="start"></ion-icon>
+          <ion-label routerLink="/usuarios">Usuarios</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="newspaper" slot="start"></ion-icon>
+          <ion-label routerLink="/noticias">Noticias</ion-label>
+        </ion-item>
+        <br>
+        <br>
+        <ion-item>
+          <ion-icon name="Exit" slot="start"></ion-icon>
+          <ion-button routerLink="/login">Cerrar sesion</ion-button>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+    <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>
